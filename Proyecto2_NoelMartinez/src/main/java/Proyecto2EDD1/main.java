@@ -33,7 +33,6 @@ public class main {
                 try {
                     Cola cola = new Cola();
                     Pila pila = new Pila();
-                    int respuesta = 0, temporal = 0;
                     cola.agregarCola(cantCajeros);
                     hilo.run(cantCajeros);
                     pila.meterPila();
@@ -49,9 +48,7 @@ public class main {
                     ArrayList lista = new ArrayList();
                     Pila pila2 = new Pila();
                     Cola cola2 = new Cola();
-                    for (int i = 0; i < cantCajeros; i++) {
-                        lista = hilo.run2(cantCajeros);
-                    }
+                    hilo.run2(cantCajeros);
                     pila2.meterPila();
                     pila2.imprimirPila();
                     pila2.anularPila();

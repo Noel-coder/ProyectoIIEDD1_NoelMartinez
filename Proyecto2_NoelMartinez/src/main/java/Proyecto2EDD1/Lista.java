@@ -18,6 +18,7 @@ public class Lista {
 
     public void imprimirPila() {
         for (int i = 0; i < listaPila.size(); i++) {
+            //se imprimen los strings acumulados
             System.out.println("[ " + listaPila.get(i) + " ]");
         }
         System.out.println("");
@@ -31,11 +32,11 @@ public class Lista {
     }
 
     public void anularPila() {
-        listaPila.remove(listaPila);
+        listaPila.removeAll(listaPila);
     }
 
     public void anularCola() {
-        listaCola.remove(listaCola);
+        listaCola.removeAll(listaCola);
     }
 
 }

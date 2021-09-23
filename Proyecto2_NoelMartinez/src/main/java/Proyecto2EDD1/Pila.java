@@ -17,6 +17,7 @@ public class Pila extends Lista {
 
     @Override
     public void imprimirPila() {
+        System.out.println("Transacciones Realizadas:");
         for (int i = 0; i < listaPila.size(); i++) {
             System.out.println("[" + listaPila.get(i) + "]");
         }
